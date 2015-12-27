@@ -114,8 +114,15 @@ if [ "x$HZ_MULTICAST_PORT" = "x" ]; then
   HZ_MULTICAST_PORT="54327"
 fi
 
-sed -i "s:HZ-MULTICAST-GROUP:${HZ_MULTICAST_GROUP}:" /opt/unvired/UMP3/standalone/configuration/hazelcast.xml
-sed -i "s:HZ-MULTICAST-PORT:${HZ_MULTICAST_PORT}:" /opt/unvired/UMP3/standalone/configuration/hazelcast.xml
+sed -i "s/HZ-MULTICAST-GROUP/${HZ_MULTICAST_GROUP}/" /opt/unvired/UMP3/standalone/configuration/hazelcast.xml
+sed -i "s/HZ-MULTICAST-PORT/${HZ_MULTICAST_PORT}/" /opt/unvired/UMP3/standalone/configuration/hazelcast.xml
+
+# ------------ LOG-LEVEL
+if [ "x$LOG_LEVEL" = "x" ]; then
+  LOG_LEVEL="ERROR"
+fi
+
+sed -i "s/LOG-LEVEL/${LOG_LEVEL}/" /opt/unvired/UMP3/standalone/configuration/standalone-full.xml
 
 # ------------ JCO
 

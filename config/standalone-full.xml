@@ -88,22 +88,22 @@
 				<level name="ERROR"/>
 			</logger>
 			<logger category="com.unvired.ump.core">
-				<level name="ERROR"/>
+				<level name="LOG-LEVEL"/>
 			</logger>
 			<logger category="com.unvired.ump.admin">
-				<level name="ERROR"/>
+				<level name="LOG-LEVEL"/>
 			</logger>
 			<logger category="com.unvired.ump.app">
-				<level name="ERROR"/>
+				<level name="LOG-LEVEL"/>
 			</logger>
 			<logger category="com.unvired.ump.web">
-				<level name="ERROR"/>
+				<level name="LOG-LEVEL"/>
 			</logger>
 			<logger category="com.unvired.ump.store">
-				<level name="ERROR"/>
+				<level name="LOG-LEVEL"/>
 			</logger>
 			<logger category="com.unvired.ump.dashboard">
-				<level name="ERROR"/>
+				<level name="LOG-LEVEL"/>
 			</logger>
 			<logger category="com.unvired.ump.audit">
 				<level name="INFO"/>
@@ -115,7 +115,7 @@
 				<level name="ERROR"/>
 			</logger>
 			<root-logger>
-				<level name="ERROR"/>
+				<level name="LOG-LEVEL"/>
 				<handlers>
 					<handler name="CONSOLE"/>
 					<handler name="FILE"/>
